@@ -1,0 +1,55 @@
+html {
+  font-family: "Montserrat", sans-serif;
+  background: #ffffff;
+}
+html button {
+  font-family: "Montserrat", sans-serif;
+}
+html input {
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  padding: 10px;
+  border: 2px solid #6591ff;
+  width: max-content;
+  border-radius: 5px;
+  background: white;
+}
+main h2 {
+  margin-top: 0;
+}
+main form {
+  display: flex;
+  gap: 10px;
+}
+main form input {
+  padding: 5px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+main form input:focus-visible {
+  outline: 2px solid #6591ff;
+}
+main form button {
+  border: none;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-weight: bold;
+  background-color: #6591ff;
+  color: white;
+}
+main .result {
+  margin-top: 15px;
+  font-size: 24px;
+}
+main .result .good-result {
+  color: #53ff53;
+  font-weight: bold;
+}
+main .result .bad-result, main .result .undefined {
+  color: red;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
