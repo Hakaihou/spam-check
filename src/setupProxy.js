@@ -6,11 +6,12 @@ module.exports = function (app) {
         createProxyMiddleware({
             target: "https://ipqualityscore.com",
             changeOrigin: true,
-            headers: {
-                Host: "ipqualityscore.com",
-            },
             pathRewrite: {
                 "^/api": "",
+            },
+            logLevel: "debug", // Включение логов
+            onProxyReq: (proxyReq) => {
+                proxyReq.removeHeader("Origin"); // Удалить заголовок Origin
             },
         })
     );

@@ -13,12 +13,23 @@ const HLRCheck = () => {
         setLoading(true);
         setResult(null);
 
-        // Корректный URL с учетом "+" перед номером
-        const API_URL = `https://ipqualityscore.com/api/json/phone/${API_KEY}/${encodeURIComponent(phone)}`;
+        const API_URL = `https://ipqualityscore.com/api/json/phone/${API_KEY}/${phone}`;
 
         try {
             const response = await axios.get(API_URL);
+            console.log("Ответ от API IPQS:", response.data);
+        } catch (error) {
+            console.error("Ошибка при запросе к API IPQS:", error);
+        }
 
+
+        try {
+            const response = await axios.get(API_URL, {
+                headers: {
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+                    "Content-Type": "application/json",
+                },
+            });
             console.log("Ответ от API IPQS:", response.data);
             setResult(response.data);
         } catch (error) {
