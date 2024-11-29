@@ -13,9 +13,7 @@ const HLRCheck = () => {
         setLoading(true);
         setResult(null);
 
-        // Корректный URL с учетом "+" перед номером
-        const API_URL = `https://ipqualityscore.com/api/json/phone/${API_KEY}/${encodeURIComponent(phone)}`;
-
+        const API_URL = `https://ipqualityscore.com/api/json/phone/${API_KEY}/${phone}`;
         try {
             const response = await axios.get(API_URL);
 
