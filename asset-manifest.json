@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Hakaihou/spam-check/static/css/main.41c7ffdf.css",
+    "main.js": "/Hakaihou/spam-check/static/js/main.ef1142be.js",
+    "index.html": "/Hakaihou/spam-check/index.html",
+    "main.41c7ffdf.css.map": "/Hakaihou/spam-check/static/css/main.41c7ffdf.css.map",
+    "main.ef1142be.js.map": "/Hakaihou/spam-check/static/js/main.ef1142be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41c7ffdf.css",
+    "static/js/main.ef1142be.js"
+  ]
+}
