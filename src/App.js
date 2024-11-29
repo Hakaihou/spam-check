@@ -1,11 +1,13 @@
 import React from 'react';
-import HLRcheck from './hlr_check.js';
+import HLRcheck from './phone-check.js';
+import EmailValidation from "./email-check";
 
 function App() {
     return (
-        <div className="App">
+        <main className="main-container">
             <HLRcheck/>
-        </div>
+            <EmailValidation/>
+        </main>
     );
 }
 

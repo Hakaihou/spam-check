@@ -17,6 +17,10 @@ main {
   width: max-content;
   border-radius: 5px;
   background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
   & h2 {
     margin-top: 0;
   }
@@ -24,6 +28,7 @@ main {
   form {
     display: flex;
     gap: 10px;
+
     & input {
       padding: 5px;
       border: 1px solid #dbdbdb;
